@@ -15,9 +15,18 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="th" className={prompt.className}>
-      <head>        
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        {/* ✅ ใช้งานจริงของ Bootstrap */}     
+        {/* Speed optimisations */}
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" crossOrigin="anonymous" />
+
+        {/* ✅ ใช้งานจริงของ Bootstrap */}
+        <link
+          rel="preload"
+          as="style"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+        />
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -33,7 +42,6 @@ export default function RootLayout({
           />
         </noscript>
 
-       
       </head>
 
       <body>
@@ -47,6 +55,7 @@ export default function RootLayout({
           src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
           crossOrigin="anonymous"
+          strategy="lazyOnload"
         />
       </body>
     </html>
