@@ -104,7 +104,6 @@ export default function ProductList({
                   alt={product.product_name}
                   width={300}
                   height={300}
-                  unoptimized
                   loading="lazy"
                   className="product-image vedio_img"
                   style={{ width: "100%", height: "auto" }} // ให้ขยายตาม container
@@ -116,7 +115,6 @@ export default function ProductList({
                     alt="placeholder"
                     width={300}
                     height={300}
-                    unoptimized
                     loading="lazy"
                     style={{ width: "100%", height: "auto" }} // ให้ขยายตาม container
                   />
@@ -170,7 +168,6 @@ export default function ProductList({
                       width={50}
                       height={50}
                       loading="lazy"
-                      unoptimized
                     />
                     <div>
                       <strong className="text-pink-contrast">
@@ -233,7 +230,6 @@ export default function ProductList({
                   alt={product.product_name}
                   width={300}
                   height={300}
-                  unoptimized
                   loading="lazy"
                   className="product-image vedio_img"
                   style={{ width: "100%", height: "auto" }} // ให้ขยายตาม container
@@ -245,7 +241,6 @@ export default function ProductList({
                     alt="placeholder"
                     width={300}
                     height={300}
-                    unoptimized
                     loading="lazy"
                     style={{ width: "100%", height: "auto" }} // ให้ขยายตาม container
                   />
@@ -354,7 +349,6 @@ export default function ProductList({
                   width={300}
                   height={300}
                   loading="lazy"
-                  unoptimized
                   className="product-image vedio_img"
                   style={{ width: "100%", height: "auto" }} // ให้ขยายตาม container
                 />
@@ -365,7 +359,6 @@ export default function ProductList({
                     alt="placeholder"
                     width={300}
                     height={300}
-                    unoptimized
                     loading="lazy"
                     style={{ width: "100%", height: "auto" }} // ให้ขยายตาม container
                   />
