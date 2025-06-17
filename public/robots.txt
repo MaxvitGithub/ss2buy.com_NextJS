@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://www.ss2buy.com
-
-# Sitemaps
-Sitemap: https://www.ss2buy.com/sitemap.xml
