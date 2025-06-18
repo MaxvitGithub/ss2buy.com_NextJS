@@ -76,12 +76,12 @@ export default function ProductList({
 
   return (
     <div className="container">
-      <section aria-labelledby="product-grid">
-        <h2 id="product-grid" className="sr-only">
+      <section aria-labelledby="product-grid-initial">
+        <h2 id="product-grid-initial" className="sr-only">
           รายการสินค้า
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {firstProducts.map((product) => (
+          {firstProducts.map((product, index) => (
             <div
               key={product.id}
               className="border rounded-lg p-2 shadow transition"
@@ -104,8 +104,8 @@ export default function ProductList({
                   alt={product.product_name}
                   width={300}
                   height={300}
-                  loading="lazy"
-                  unoptimized
+                  priority={index === 0}
+                  loading={index === 0 ? "eager" : "lazy"}
                   className="product-image vedio_img"
                   style={{ width: "100%", height: "auto" }} // ให้ขยายตาม container
                 />
@@ -116,7 +116,8 @@ export default function ProductList({
                     alt="placeholder"
                     width={300}
                     height={300}
-                    loading="lazy"
+                    priority={index === 0}
+                    loading={index === 0 ? "eager" : "lazy"}
                     style={{ width: "100%", height: "auto" }} // ให้ขยายตาม container
                   />
                 </div>
@@ -203,12 +204,12 @@ export default function ProductList({
           `}</style>
         </section>
       )}
-      <section aria-labelledby="product-grid">
-        <h2 id="product-grid" className="sr-only">
+      <section aria-labelledby="product-grid-faq">
+        <h2 id="product-grid-faq" className="sr-only">
           รายการสินค้า
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {faqList.map((product) => (
+          {faqList.map((product, index) => (
             <div
               key={product.id}
               className="border rounded-lg p-2 shadow transition"
@@ -231,8 +232,7 @@ export default function ProductList({
                   alt={product.product_name}
                   width={300}
                   height={300}
-                  loading="lazy"
-                  unoptimized
+                  loading={index === 0 ? "eager" : "lazy"}
                   className="product-image vedio_img"
                   style={{ width: "100%", height: "auto" }} // ให้ขยายตาม container
                 />
@@ -243,7 +243,7 @@ export default function ProductList({
                     alt="placeholder"
                     width={300}
                     height={300}
-                    loading="lazy"
+                    loading={index === 0 ? "eager" : "lazy"}
                     style={{ width: "100%", height: "auto" }} // ให้ขยายตาม container
                   />
                 </div>
@@ -321,13 +321,13 @@ export default function ProductList({
         </ul>
       </aside>
 
-      <section aria-labelledby="product-grid">
-        <h2 id="product-grid" className="sr-only">
+      <section aria-labelledby="product-grid-remaining">
+        <h2 id="product-grid-remaining" className="sr-only">
           รายการสินค้า
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
-          {remainingProducts.map((product) => (
+          {remainingProducts.map((product, index) => (
             <div
               key={product.id}
               className="border rounded-lg p-2 shadow transition"
@@ -350,8 +350,7 @@ export default function ProductList({
                   alt={product.product_name}
                   width={300}
                   height={300}
-                  loading="lazy"
-                  unoptimized
+                  loading={index === 0 ? "eager" : "lazy"}
                   className="product-image vedio_img"
                   style={{ width: "100%", height: "auto" }} // ให้ขยายตาม container
                 />
@@ -362,7 +361,7 @@ export default function ProductList({
                     alt="placeholder"
                     width={300}
                     height={300}
-                    loading="lazy"
+                    loading={index === 0 ? "eager" : "lazy"}
                     style={{ width: "100%", height: "auto" }} // ให้ขยายตาม container
                   />
                 </div>
