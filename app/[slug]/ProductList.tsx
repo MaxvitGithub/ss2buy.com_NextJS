@@ -105,6 +105,7 @@ export default function ProductList({
                   width={300}
                   height={300}
                   loading="lazy"
+                  unoptimized
                   className="product-image vedio_img"
                   style={{ width: "100%", height: "auto" }} // ให้ขยายตาม container
                 />
@@ -166,7 +167,7 @@ export default function ProductList({
                       alt={review.name}
                       className="rounded-circle me-3"
                       width={50}
-                      height={50}
+                      height={50}                    
                       loading="lazy"
                     />
                     <div>
@@ -231,6 +232,7 @@ export default function ProductList({
                   width={300}
                   height={300}
                   loading="lazy"
+                  unoptimized
                   className="product-image vedio_img"
                   style={{ width: "100%", height: "auto" }} // ให้ขยายตาม container
                 />
@@ -349,6 +351,7 @@ export default function ProductList({
                   width={300}
                   height={300}
                   loading="lazy"
+                  unoptimized
                   className="product-image vedio_img"
                   style={{ width: "100%", height: "auto" }} // ให้ขยายตาม container
                 />
