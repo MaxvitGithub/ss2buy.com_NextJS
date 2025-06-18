@@ -21,12 +21,7 @@ export default function RootLayout({
         {/* Speed optimisations */}
         <link rel="preconnect" href="https://cdn.jsdelivr.net" crossOrigin="anonymous" />
 
-        {/* ✅ ใช้งานจริงของ Bootstrap */}
-        <link
-          rel="preload"
-          as="style"
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-        />
+        {/* ✅ ใช้งานจริงของ Bootstrap */}       
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
