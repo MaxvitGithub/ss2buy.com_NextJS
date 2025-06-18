@@ -20,6 +20,10 @@ export default function RootLayout({
 
         {/* Speed optimisations */}
         <link rel="preconnect" href="https://cdn.jsdelivr.net" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://down-ws-th.img.susercontent.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://down-zl-th.img.susercontent.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://down-bs-th.img.susercontent.com" crossOrigin="anonymous" />
 
         {/* ✅ ใช้งานจริงของ Bootstrap */}       
         <link
